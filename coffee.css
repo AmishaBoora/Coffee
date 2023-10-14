@@ -21,7 +21,7 @@ html{
     font-size: 63%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 9rem;
+    /* scroll-padding-top: 9rem; */
 }
 
 html::-webkit-scrollbar{
@@ -67,10 +67,10 @@ section{
 .header{
     background: var(--bg);
     display: flex;
-    height: calc(100vh - 31rem);
+    height: calc(100vh -20rem);
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7%;
+    padding: 1rem 7%;
     border-bottom: var(--border);
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -430,12 +430,18 @@ section{
 
 /* media queries */
 
+@media (min-width:990px) {
+    .home .content{
+        margin-top: 5rem;
+    }
+}
 @media (max-width:990px) {
     html{
         font-size: 55%;
     }
     .header{
-        padding: 1.5rem 2rem;height: calc(100vh - 34rem);
+        padding: .2rem 2rem;
+        height: calc(100vh -34rem);
     }
     section{
         padding: 2rem;
@@ -451,7 +457,7 @@ section{
         top: 100%; right: -100%;
         background: #fff;
         width: 30rem;
-        height: calc(100vh - 9.5rem);
+        height: calc(100vh -9.5rem);
     }
     .header .navbar.active{
         right: 0; 
